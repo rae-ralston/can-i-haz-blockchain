@@ -7,6 +7,7 @@ Very halpful: [An Overview of Lexing & Parsing](http://savage.net.au/Ron/html/gr
   - Lexing can be divided into two stages:
     - the scanning, which segments the input string into syntactic units called *lexemes* and categorizes these into token classesA lexeme is a sequence of characters in the source program that matches the pattern for a token and is identified by the lexical analyzer as an instance of that token.
     - the evaluating, which converts lexemes into processed values.
+    ![](./tokenValuesExample.png)
   So this:
   ```js
   x = a + b * 2;
