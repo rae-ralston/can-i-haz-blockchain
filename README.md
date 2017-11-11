@@ -3,30 +3,14 @@
 A CONTRACT-ORIENTD, HIGH-LEVEL LANGUAGE WHOSE SYNTAX IZ SIMILAR 2 DAT OV [LOLCODE](http://lolcode.org/) AN IT DESIGND 2 TARGET TEH ETHEREUM VIRTUAL MACHINE (EVM)
 
 ## BUT HOW THO?
-1. Define some syntax.
+1. Learn about parsing, lexing, & compilers.
+1. Learn a bunch more about the EVM and how bytecode works.
+1. Define some [lexical gramar](https://en.wikipedia.org/wiki/Lexical_grammar).
 1. Map to required EVM bytecode.
-
-### Lexing & Parsing
-- Very halpful: [An Overview of Lexing & Parsing](http://savage.net.au/Ron/html/graphviz2.marpa/Lexing.and.Parsing.Overview.html#An_Overview_of_Lexing_and_Parsing)
-  **LEXING**
-  - They happen in alphabetical order: Lexing then Parsing
-  - [Wikipedia](https://en.wikipedia.org/wiki/Lexical_analysis)**lexing** is tokenising a stream of text, which means chopping that input stream into discrete tokens, and identifying the type of each token. The output is a new stream, this time of stand-alone tokens.
-  - for each recognized token, 2 items will be output:
-    - The type of the token
-    - The value of the token
-    ```js
-      {
-        count: 'integer',     // 1 .. N.
-        name: '',           // Unused.
-        type: 'string',     // The type of the token.
-        value: 'value',     // The value from the input stream.
-      }
-    ```
-  **PARSING**
-  - [Wikipedia](https://en.wikipedia.org/wiki/Parsing) - The **parser** concerns itself with the context in which each token appears, which is a way of saying it cares about whether or not the sequence and combination of tokens actually detected fits the expected grammar.
+1. Backward engineer a compiled LOLCHAIN contract to match the critical parts of a compiled solidity contract.
 
 
-### Links & Resources
+## Links & Resources
 - Deeply inspired by [kosamari](https://twitter.com/kosamari)'s work: How to be* a compiler — make a compiler with JavaScript: [Article](https://medium.com/@kosamari/how-to-be-a-compiler-make-a-compiler-with-javascript-4a8a13d473b4), [StrangeLoop Presentation](https://www.youtube.com/watch?v=-xlbfBUZN5s)
 - LOLCODE: [documentation](http://lolcode.org/), [Wikipedia](https://en.wikipedia.org/wiki/LOLCODE)
 - Solidity [Documentation](https://solidity.readthedocs.io/en/develop/), [Github](https://github.com/ethereum/solidity)
