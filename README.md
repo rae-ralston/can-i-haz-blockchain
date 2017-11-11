@@ -4,6 +4,7 @@ A CONTRACT-ORIENTD, HIGH-LEVEL LANGUAGE WHOSE SYNTAX IZ SIMILAR 2 DAT OV [LOLCOD
 
 ## BUT HOW THO?
 1. Learn about parsing, lexing, & compilers.
+  - Do I want to write a lexer or try something like this [lexer](https://github.com/aaditmshah/lexer)/[compiler](https://github.com/zaach/jison) combo?
 1. Learn a bunch more about the EVM and how bytecode works.
 1. Define some [lexical gramar](https://en.wikipedia.org/wiki/Lexical_grammar).
 1. Map to required EVM bytecode.
